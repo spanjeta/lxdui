@@ -10,10 +10,14 @@ import logging
 logging = logging.getLogger(__name__)
 
 class LXDModule(Base):
-    # Default 127.0.0.1 -> Move to Config
-    def __init__(self, remoteHost='127.0.0.1'):
+    def __init__(self):
         logging.info('Accessing PyLXD client')
-        self.client = Client()
+        lxd_host = Config().get(meta.APP_NAME, '{}.lxd.host'.format(meta.APP_NAME.lower()))
+        if lxd_host:
+            logging.info('Accessing lxd host: {} with sslverify {}'.format(lxd_host, False))
+            self.client = Client(endpoint=lxd_host, verify=False)
+        else:
+            self.client = Client()
 
     def listContainers(self):
         try:
