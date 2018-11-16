@@ -487,12 +487,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="cloneContainerForm" class="form-horizontal">
+
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
-                <form id="cloneContainerForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="newContainerClone" class="col-sm-3 control-label">Clone Name</label>
                         <div class="col-sm-8">
@@ -503,12 +504,13 @@
                         <div class="form-inline col-md-offset-3 col-md-3 mgtop-10">
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" id="cloneContainerSubmit" class="btn btn-primary">Clone <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
+		    
+                </form>
       </div>
     </div>
   </div>
@@ -519,12 +521,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="moveContainerForm" class="form-horizontal">
+
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
-                <form id="moveContainerForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="newContainerMove" class="col-sm-3 control-label">Move Container Name</label>
                         <div class="col-sm-8">
@@ -535,12 +538,13 @@
                         <div class="form-inline col-md-offset-3 col-md-3 mgtop-10">
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" id="moveContainerSubmit" class="btn btn-primary">Move <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
+		    
+                </form>
       </div>
     </div>
   </div>
@@ -551,12 +555,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="exportContainerForm" class="form-horizontal">
+
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
-                <form id="exportContainerForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="imageAlias" class="col-sm-3 control-label">Image Alias</label>
                         <div class="col-sm-8">
@@ -568,12 +573,13 @@
 
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" id="exportContainerSubmit" class="btn btn-primary">Export <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
+		    
+                </form>
       </div>
     </div>
   </div>
@@ -584,12 +590,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		
+                <form id="snapshotContainerForm" class="form-horizontal">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
-                <form id="snapshotContainerForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="snapshotName" class="col-sm-3 control-label">Snapshot Name</label>
                         <div class="col-sm-8">
@@ -604,12 +611,13 @@
                         <div class="form-inline col-md-offset-3 col-md-3" class="mgtop-10">
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" id="submit" class="btn btn-primary">Snapshot <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
+			
+                </form>
       </div>
     </div>
   </div>
@@ -620,12 +628,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		
+                <form id="containerFromSnapshotForm" class="form-horizontal">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
-                <form id="containerFromSnapshotForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="newContainerSnapshot" class="col-sm-3 control-label">New Container Name</label>
                         <div class="col-sm-8">
@@ -636,12 +645,13 @@
                         <div class="form-inline col-md-offset-3 col-md-3" class="mgtop-10">
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="submit" id="containerFromSnapshotSubmit" class="btn btn-primary">New Container <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
+			
+                </form>
       </div>
     </div>
   </div>
@@ -652,12 +662,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		
+                <form id="newFileManagerForm" class="form-horizontal">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">New File > <span id="path"></span></h4>
             </div>
             <div class="modal-body">
-                <form id="newFileManagerForm" class="form-horizontal">
                     <div class="form-group">
                         <label for="fileName" class="col-sm-1 control-label">Name</label>
                         <div class="col-sm-11">
@@ -670,12 +681,13 @@
                         </div>
                     </div>
 
-                </form>
             </div>
             <div class="modal-footer text-center">
                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="submit" id="newFileSubmit" class="btn btn-primary">Save <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
             </div>
+			
+                </form>
       </div>
     </div>
 </div>
@@ -755,12 +767,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="uploadForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/api/file/container/{{container.name}}">
+
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">New File > <span id="uploadFolderLocation">/</span></h4>
             </div>
             <div class="modal-body">
-                <form id="uploadForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/api/file/container/{{container.name}}">
                     <div class="form-group">
                         <label for="Path" class="col-sm-1 control-label">Path</label>
                         <div class="col-sm-11">
@@ -774,12 +787,13 @@
                         </div>
                     </div>
 
-                </form>
             </div>
             <div class="modal-footer text-center">
                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" id="uploadFileSubmit" class="btn btn-primary">Upload <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
             </div>
+					
+                </form>
       </div>
     </div>
 </div>
@@ -788,12 +802,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="addProxyForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/api/file/container/{{container.name}}">
+ 
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="addProxyForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/api/file/container/{{container.name}}">
-                    <div class="form-group">
+                   <div class="form-group">
                         <label for="Name" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
                             <input id="name" name="name" class="form-control" type="text" placeholder="Name" title="Name" required/>
@@ -835,12 +850,13 @@
                             <input id="containerPort" name="containerPort" class="form-control" type="text" placeholder="Container port" title="Container port" required/>
                         </div>
                     </div>
-                </form>
             </div>
             <div class="modal-footer text-center">
                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" id="addProxy" class="btn btn-primary">Save <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
             </div>
+					
+                </form>
       </div>
     </div>
 </div>
@@ -849,12 +865,13 @@
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
+		                <form id="addNetworkInterfaceForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/network/{{container.name}}/add'">
+
             <div class="modal-header">
                 <h4 class="modal-title">Add Network Interface</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="addNetworkInterfaceForm" class="form-horizontal" method="POST" enctype="multipart/form-data" action="/network/{{container.name}}/add'">
                     <div class="form-group">
                         <label for="name" class="col-sm-4 control-label">Device Name</label>
                         <div class="col-sm-8">
@@ -905,12 +922,13 @@
                             </div>
                      </div>
                     <input name="type" value="nic" class="hidden" />
-                </form>
+            
             </div>
             <div class="modal-footer text-center">
                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" id="addNetwork" class="btn btn-primary">Save <span class="glyphicon glyphicon-refresh spinning loader"></span></button>
             </div>
+					    </form>
       </div>
     </div>
 </div>
