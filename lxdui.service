@@ -1,0 +1,8 @@
+[Unit]
+Description=LXDUI
+
+[Service]
+ExecStart=/usr/local/bin/lxdui start
+
+[Install]
+WantedBy=multi-user.target

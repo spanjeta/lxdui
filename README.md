@@ -56,6 +56,13 @@ When the app starts open a browser to the following link to access the app:
 
 **Log In.**  The default account and password are: **admin** | **admin**
 
+### Start LXDUI as Service/Daemon
+
+copy lxdui file to systemmd
+`cp lxdui.service /etc/systemd/system/`
+
+
+
 ## CONTRIBUTION
 
 Your contribution is welcome and greatly appreciated.  Please contribute your fixes and new features via a pull request.
